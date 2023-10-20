@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    gap: 5px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding-bottom: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.showHidebtn {
+    background-color: rgb(24, 23, 23);
+    color: wheat;
+    width: 18%;
+    font-size: 17px;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.showHidebtn .icons {
+    margin-top: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.showHidebtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(219, 84, 84, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logInBtn {
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    color: wheat;
+}
+
+.logInBtn:hover {
+    box-shadow: 0 12px 16px 0 rgba(219, 84, 84, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 470px) {
+    .App {
+        max-width: 96%;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .App {
+        max-width: 96%;
+    }
+
+}
+
+.inputNbutton {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+
+}
+
+.passwordInput {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
